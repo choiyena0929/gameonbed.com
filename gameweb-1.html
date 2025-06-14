@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameOnBed - 最佳在线游戏集合 | Best Online Games Collection</title>
+    <link rel="canonical" href="https://gameonbed.com/" />
+    <meta name="description" content="在GameOnBed上发现并享受各种免费在线游戏。我们精选的游戏集合适合所有年龄段和兴趣爱好。 | Discover and enjoy a variety of free online games on GameOnBed. Our curated collection suits all ages and interests.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-green: #34C759;
+            --apple-indigo: #5856D6;
+            --apple-orange: #FF9500;
+            --apple-pink: #FF2D55;
+            --apple-purple: #AF52DE;
+            --apple-red: #FF3B30;
+            --apple-teal: #5AC8FA;
+            --apple-yellow: #FFCC00;
+            --apple-gray: #8E8E93;
+            --apple-gray2: #AEAEB2;
+            --apple-gray3: #C7C7CC;
+            --apple-gray4: #D1D1D6;
+            --apple-gray5: #E5E5EA;
+            --apple-gray6: #F2F2F7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .language-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="language-switch">
+        <button id="zh-btn" class="px-3 py-1 bg-white border border-gray-300 rounded-l-md font-medium text-sm text-gray-700 hover:bg-gray-50">中文</button>
+        <button id="en-btn" class="px-3 py-1 bg-gray-100 border border-gray-300 rounded-r-md font-medium text-sm text-gray-500 hover:bg-gray-50">English</button>
+    </div>
+
+    <!-- 中文版本 -->
+    <div id="zh-content">
+        <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+            <div class="container mx-auto px-4 py-16 md:py-24">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">GameOnBed - 您的在线游戏天堂</h1>
+                <p class="text-xl md:text-2xl text-center max-w-3xl mx-auto">发现各种有趣的免费在线游戏，随时随地尽情享受游戏乐趣</p>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-4 py-12">
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">热门游戏</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 游戏1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">2048</h3>
+                            <p class="text-gray-600 mb-4">一款经典的数字合并益智游戏，考验您的策略思维</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/2048/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">2048是一款简单而上瘾的数字拼图游戏。通过合并相同的数字来获得2048方块。使用策略思维和计划来获得高分！适合所有年龄段的玩家，特别是喜欢益智挑战的人。</p>
+                        </div>
+                    </div>
+
+                    <!-- 游戏2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">贪吃蛇</h3>
+                            <p class="text-gray-600 mb-4">控制贪吃蛇吃食物并成长，但不要撞到自己！</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/snake/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">贪吃蛇是一款经典的街机游戏，玩家控制一条蛇在屏幕上移动。吃掉食物让蛇变长，同时避免撞到墙壁或自己的身体。简单的操作但需要敏捷的反应和策略规划。</p>
+                        </div>
+                    </div>
+
+                    <!-- 游戏3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">俄罗斯方块</h3>
+                            <p class="text-gray-600 mb-4">经典的方块堆叠游戏，考验您的空间思维能力</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/tetris/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">俄罗斯方块是一款标志性的拼图游戏，玩家需要旋转和放置不同形状的方块，以完成完整的行并获得分数。游戏节奏逐渐加快，测试您的反应速度和策略规划能力。适合所有年龄段的玩家。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">休闲游戏</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 游戏4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">弹跳球</h3>
+                            <p class="text-gray-600 mb-4">控制小球跳跃，避开障碍物，看看你能走多远</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/bouncyball/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">弹跳球是一款简单而有趣的休闲游戏，玩家需要控制一个小球跳过各种障碍物。游戏节奏快，操作简单，但需要精确的时机和良好的反应能力。非常适合短时间休闲娱乐。</p>
+                        </div>
+                    </div>
+
+                    <!-- 游戏5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">记忆配对</h3>
+                            <p class="text-gray-600 mb-4">测试您的记忆力，找出所有匹配的卡片对</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/memory/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">记忆配对是一款锻炼大脑的游戏，玩家需要翻开卡片并记住它们的位置，然后找出所有匹配的对子。这款游戏可以提高记忆力和注意力，适合所有年龄段的玩家，特别是儿童和老年人。</p>
+                        </div>
+                    </div>
+
+                    <!-- 游戏6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">数独挑战</h3>
+                            <p class="text-gray-600 mb-4">经典数字拼图游戏，锻炼您的逻辑思维能力</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/sudoku/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">数独是一款受欢迎的逻辑拼图游戏，玩家需要在9x9的网格中填入数字1-9，使每行、每列和每个3x3方格中都包含所有数字1-9。这款游戏需要逻辑思维和耐心，是锻炼大脑的绝佳方式。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">关于GameOnBed</h2>
+                <div class="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto">
+                    <p class="text-gray-700 mb-4">GameOnBed是一个精心策划的在线游戏集合平台，我们的目标是为玩家提供高质量、有趣且易于访问的游戏体验。</p>
+                    <p class="text-gray-700 mb-4">我们的游戏适合所有年龄段和兴趣爱好，从经典的益智游戏到刺激的动作游戏，应有尽有。所有游戏都可以直接在浏览器中玩，无需下载或安装。</p>
+                    <p class="text-gray-700">我们定期更新游戏库，为您带来最新、最有趣的游戏。感谢您访问GameOnBed，希望您在这里找到乐趣！</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <h2 class="text-2xl font-bold mb-2">GameOnBed</h2>
+                        <p class="text-gray-400">您的在线游戏天堂</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">链接</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-400 hover:text-white">首页</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">游戏</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">关于我们</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">联系我们</h3>
+                            <ul class="space-y-2">
+                                <li><a href="mailto:info@gameonbed.com" class="text-gray-400 hover:text-white">info@gameonbed.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2023 GameOnBed. 保留所有权利。</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 英文版本 -->
+    <div id="en-content" class="hidden">
+        <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+            <div class="container mx-auto px-4 py-16 md:py-24">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">GameOnBed - Your Online Gaming Paradise</h1>
+                <p class="text-xl md:text-2xl text-center max-w-3xl mx-auto">Discover a variety of fun free online games to enjoy anytime, anywhere</p>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-4 py-12">
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Popular Games</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Game 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">2048</h3>
+                            <p class="text-gray-600 mb-4">A classic number merging puzzle game that tests your strategic thinking</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/2048/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">2048 is a simple yet addictive number puzzle game. Merge identical tiles to get to the 2048 tile. Use strategic thinking and planning to achieve high scores! Suitable for players of all ages, especially those who enjoy mental challenges.</p>
+                        </div>
+                    </div>
+
+                    <!-- Game 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">Snake</h3>
+                            <p class="text-gray-600 mb-4">Control the snake to eat food and grow, but don't hit yourself!</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/snake/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">Snake is a classic arcade game where players control a snake moving around the screen. Eat food to make the snake longer while avoiding hitting walls or your own body. Simple controls but requires quick reflexes and strategic planning.</p>
+                        </div>
+                    </div>
+
+                    <!-- Game 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">Tetris</h3>
+                            <p class="text-gray-600 mb-4">The classic block stacking game that tests your spatial thinking</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/tetris/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">Tetris is an iconic puzzle game where players rotate and place different shaped blocks to complete full rows and score points. The game gradually speeds up, testing your reaction time and strategic planning abilities. Suitable for players of all ages.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Casual Games</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Game 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">Bouncy Ball</h3>
+                            <p class="text-gray-600 mb-4">Control the ball to jump over obstacles and see how far you can go</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/bouncyball/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">Bouncy Ball is a simple and fun casual game where players control a ball jumping over various obstacles. The game is fast-paced with simple controls but requires precise timing and good reflexes. Perfect for short gaming sessions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Game 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">Memory Match</h3>
+                            <p class="text-gray-600 mb-4">Test your memory by finding all matching card pairs</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/memory/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">Memory Match is a brain-training game where players need to flip cards and remember their positions to find all matching pairs. This game can improve memory and concentration, suitable for players of all ages, especially children and seniors.</p>
+                        </div>
+                    </div>
+
+                    <!-- Game 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">Sudoku Challenge</h3>
+                            <p class="text-gray-600 mb-4">Classic number puzzle game that exercises your logical thinking</p>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe src="https://games.gamemonetize.com/sudoku/" frameborder="0" width="100%" height="400" class="rounded-md"></iframe>
+                            </div>
+                            <p class="text-gray-700">Sudoku is a popular logic puzzle game where players need to fill a 9x9 grid with digits 1-9 so that each row, column, and 3x3 section contains all digits from 1-9. This game requires logical thinking and patience, making it a great brain exercise.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">About GameOnBed</h2>
+                <div class="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto">
+                    <p class="text-gray-700 mb-4">GameOnBed is a carefully curated online game collection platform. Our goal is to provide players with high-quality, fun, and easily accessible gaming experiences.</p>
+                    <p class="text-gray-700 mb-4">Our games cater to all age groups and interests, from classic puzzle games to exciting action games. All games can be played directly in your browser without any downloads or installations required.</p>
+                    <p class="text-gray-700">We regularly update our game library to bring you the latest and most entertaining games. Thank you for visiting GameOnBed, and we hope you find joy here!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <h2 class="text-2xl font-bold mb-2">GameOnBed</h2>
+                        <p class="text-gray-400">Your Online Gaming Paradise</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Links</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">Games</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
+                            <ul class="space-y-2">
+                                <li><a href="mailto:info@gameonbed.com" class="text-gray-400 hover:text-white">info@gameonbed.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2023 GameOnBed. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // 语言切换功能
+        const zhBtn = document.getElementById('zh-btn');
+        const enBtn = document.getElementById('en-btn');
+        const zhContent = document.getElementById('zh-content');
+        const enContent = document.getElementById('en-content');
+
+        zhBtn.addEventListener('click', function() {
+            zhContent.classList.remove('hidden');
+            enContent.classList.add('hidden');
+            zhBtn.classList.add('bg-white', 'text-gray-700');
+            zhBtn.classList.remove('bg-gray-100', 'text-gray-500');
+            enBtn.classList.add('bg-gray-100', 'text-gray-500');
+            enBtn.classList.remove('bg-white', 'text-gray-700');
+        });
+
+        enBtn.addEventListener('click', function() {
+            enContent.classList.remove('hidden');
+            zhContent.classList.add('hidden');
+            enBtn.classList.add('bg-white', 'text-gray-700');
+            enBtn.classList.remove('bg-gray-100', 'text-gray-500');
+            zhBtn.classList.add('bg-gray-100', 'text-gray-500');
+            zhBtn.classList.remove('bg-white', 'text-gray-700');
+        });
+    </script>
+    <!-- 生成HTML文件的脚本 -->
+    <script>
+        // 获取整个HTML内容
+        function generateHTMLFile() {
+            // 获取当前页面的HTML内容
+            const htmlContent = document.documentElement.outerHTML;
+            
+            // 创建Blob对象
+            const blob = new Blob([htmlContent], {type: 'text/html'});
+            
+            // 创建下载链接
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(blob);
+            downloadLink.download = 'gameonbed.html';
+            
+            // 添加到页面并触发点击
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            
+            // 清理
+            document.body.removeChild(downloadLink);
+            URL.revokeObjectURL(downloadLink.href);
+        }
+        
+        // 添加一个浮动按钮用于下载HTML文件
+        const downloadButton = document.createElement('button');
+        downloadButton.textContent = '下载HTML文件';
+        downloadButton.style.position = 'fixed';
+        downloadButton.style.bottom = '20px';
+        downloadButton.style.right = '20px';
+        downloadButton.style.padding = '10px 15px';
+        downloadButton.style.backgroundColor = '#4F46E5';
+        downloadButton.style.color = 'white';
+        downloadButton.style.border = 'none';
+        downloadButton.style.borderRadius = '5px';
+        downloadButton.style.cursor = 'pointer';
+        downloadButton.style.zIndex = '1000';
+        downloadButton.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+        
+        downloadButton.addEventListener('click', generateHTMLFile);
+        
+        // 页面加载完成后添加按钮
+        window.addEventListener('load', function() {
+            document.body.appendChild(downloadButton);
+        });
+    </script>
