@@ -143,17 +143,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Minecraft Remake -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer game-card" data-game-title="Minecraft Remake" data-game-url="https://html5.gamemonetize.com/cznxajp3hzb8l7gtebaq96s0pbrfa33m/">
-                        <div class="p-6">
-                            <img src="https://img.gamemonetize.com/cznxajp3hzb8l7gtebaq96s0pbrfa33m/512x384.jpg" alt="Minecraft Remake" class="w-full h-40 object-cover rounded mb-4">
-                            <h3 class="text-xl font-bold mb-2 text-gray-800">Minecraft Remake</h3>
-                            <p class="text-gray-600 mb-4">经典沙盒建造游戏，探索世界、创造属于你的家园！</p>
-                            <div class="aspect-w-16 aspect-h-9 mb-4 flex items-center justify-center bg-gray-100">
-                                <span class="text-gray-400">点击卡片开始游戏</span>
-                            </div>
-                        </div>
-                    </div>
                     <!-- Baldi's Basics v1.4.3 -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer game-card" data-game-title="Baldi's Basics v1.4.3" data-game-url="https://html5.gamemonetize.com/iiifrxhcnzl5laslqf3eaedtevjzb2bu/">
                         <div class="p-6">
@@ -427,13 +416,9 @@
         <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full relative">
             <button id="close-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
             <h3 id="modal-title" class="text-xl font-bold mb-4 text-center"></h3>
-            <div class="flex justify-end mb-2 pr-4">
-                <button id="mute-btn" class="px-3 py-1 bg-gray-200 rounded text-gray-700 hover:bg-gray-300">🔇 静音</button>
-            </div>
             <div class="aspect-w-16 aspect-h-9 mb-4">
                 <iframe id="modal-iframe" src="" frameborder="0" width="100%" height="500" class="rounded-md" allow="autoplay; encrypted-media" allowfullscreen scrolling="no" style="border: none; overflow: hidden;" muted></iframe>
             </div>
-            <div id="mute-tip" class="text-center text-gray-400 text-xs pb-4">如遇到游戏内有音量设置，请在游戏内自行调节。</div>
         </div>
     </div>
 
@@ -443,9 +428,6 @@
     const modalTitle = document.getElementById('modal-title');
     const modalIframe = document.getElementById('modal-iframe');
     const closeModal = document.getElementById('close-modal');
-    const muteBtn = document.getElementById('mute-btn');
-    const muteTip = document.getElementById('mute-tip');
-    let isMuted = true;
 
     // 绑定所有游戏卡片点击事件
     Array.from(document.getElementsByClassName('game-card')).forEach(card => {
@@ -453,12 +435,8 @@
             const title = card.getAttribute('data-game-title');
             const url = card.getAttribute('data-game-url');
             modalTitle.textContent = title;
-            // 加载iframe并初始静音（部分游戏支持 ?mute=1 参数）
             modalIframe.src = url + (url.includes('?') ? '&mute=1' : '?mute=1');
             modalIframe.muted = true;
-            isMuted = true;
-            muteBtn.textContent = '🔇 静音';
-            muteTip.textContent = '如遇到游戏内有音量设置，请在游戏内自行调节。';
             modal.classList.remove('hidden');
         });
     });
@@ -475,16 +453,16 @@
             modalIframe.src = '';
         }
     });
+    </script>
 
-    // 静音/取消静音按钮（仅切换按钮和提示，不重载iframe）
-    muteBtn.addEventListener('click', function() {
-        isMuted = !isMuted;
-        if (isMuted) {
-            muteBtn.textContent = '🔇 静音';
-            muteTip.textContent = '如遇到游戏内有音量设置，请在游戏内自行调节。';
-        } else {
-            muteBtn.textContent = '🔊 取消静音';
-            muteTip.textContent = '如需关闭声音，请在游戏内设置音量。';
-        }
+    <script>
+    window.addEventListener('DOMContentLoaded', function() {
+        // 默认显示英文内容
+        document.getElementById('zh-content').classList.add('hidden');
+        document.getElementById('en-content').classList.remove('hidden');
+        document.getElementById('zh-btn').classList.add('bg-gray-100', 'text-gray-500');
+        document.getElementById('zh-btn').classList.remove('bg-white', 'text-gray-700');
+        document.getElementById('en-btn').classList.add('bg-white', 'text-gray-700');
+        document.getElementById('en-btn').classList.remove('bg-gray-100', 'text-gray-500');
     });
     </script>
