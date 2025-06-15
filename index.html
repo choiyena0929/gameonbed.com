@@ -412,52 +412,6 @@
             zhBtn.classList.remove('bg-white', 'text-gray-700');
         });
     </script>
-    <!-- 生成HTML文件的脚本 -->
-    <script>
-        // 获取整个HTML内容
-        function generateHTMLFile() {
-            // 获取当前页面的HTML内容
-            const htmlContent = document.documentElement.outerHTML;
-            
-            // 创建Blob对象
-            const blob = new Blob([htmlContent], {type: 'text/html'});
-            
-            // 创建下载链接
-            const downloadLink = document.createElement('a');
-            downloadLink.href = URL.createObjectURL(blob);
-            downloadLink.download = 'gameonbed.html';
-            
-            // 添加到页面并触发点击
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            
-            // 清理
-            document.body.removeChild(downloadLink);
-            URL.revokeObjectURL(downloadLink.href);
-        }
-        
-        // 添加一个浮动按钮用于下载HTML文件
-        const downloadButton = document.createElement('button');
-        downloadButton.textContent = '下载HTML文件';
-        downloadButton.style.position = 'fixed';
-        downloadButton.style.bottom = '20px';
-        downloadButton.style.right = '20px';
-        downloadButton.style.padding = '10px 15px';
-        downloadButton.style.backgroundColor = '#4F46E5';
-        downloadButton.style.color = 'white';
-        downloadButton.style.border = 'none';
-        downloadButton.style.borderRadius = '5px';
-        downloadButton.style.cursor = 'pointer';
-        downloadButton.style.zIndex = '1000';
-        downloadButton.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
-        
-        downloadButton.addEventListener('click', generateHTMLFile);
-        
-        // 页面加载完成后添加按钮
-        window.addEventListener('load', function() {
-            document.body.appendChild(downloadButton);
-        });
-    </script>
 
     <!-- 弹窗容器 -->
     <div id="game-modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
